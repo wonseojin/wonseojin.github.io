@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 프로그래밍 기초 기말과제</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header>
+        <div id="title">
+         <a href="home.html"><h1>About rose_</h1></a>
+        </div>
+       <nav>
+           <ul class="menu">
+               <li><a href="variety.html">품종</a></li>
+               <li><a href="flowerlang.html">색깔별 꽃말</a></li>
+               <li><a href="bouquet.html">송이별 꽃말</a></li>
+               <li><a href="order.html">주문서</a></li>
+           </ul>
+       </nav>
+   </header>
+   <main>
+       <form>
+      <fieldset>
+          <legend>주문서</legend>
+          <p><strong>상품 선택</strong></p>
+          <ul id="product">
+                <li>
+                 <label for="colour">색</label>
+                 <select id="colour">
+                  <option value="none" selected>해당사항 없음</option>
+                  <option value="red">붉은색</option>
+                  <option value="yellow">노란색</option>
+                  <option value="pink">분홍색</option>
+                  <option value="purple">보라색</option>
+                  <option value="blue">파란색</option>
+                  <option value="black">검은색</option>
+                 </select>
+               </li>
+               <li>
+               <label for="variety">품종</label>
+                <select id="variety">
+                <option value="none" selected>해당사항 없음</option>
+                  <option value="nostalgia">노스탤지어</option>
+                  <option value="blackbeauty">블랙뷰티</option>
+                  <option value="dolcetto">돌세토 장미</option>
+                  <option value="bonavista">보나비스타</option>
+                  <option value="justjoey">저스트 조이</option>
+                  <option value="iceberg">아이스버그</option>
+                </select>
+                </li>
+                <li>
+                    <legend>포장 여부</legend>
+                    <input type="radio" name="package" id="package_y">
+                    <label for="package_y">선물용 포장</label>
+                    <input type="radio" name="package" id="package_n">
+                    <label for="package_n">선물용 포장 없음</label>
+                 </li>
+                 </ul>
+            <hr>
+            <p><strong>배송 정보</strong></p>
+            <ul id="information">
+            <li>
+                <label for="name">이름</label>
+                <input type="text" id="name" required>
+            </li>
+            <li>
+                <legend>수령 방법</legend>
+                <input type="radio" name="delivery" id="delivery_n">
+                <label for="package_y">방문 수령</label>
+                <input type="radio" name="delivery" id="delivery_y">
+                <label for="package_n">택배 배송</label>
+            </li>
+            <li>
+                <label for="address">배송 주소</label>
+                <input type="text" id="address" placeholder="택배 배송을 선택한 경우에만">
+            </li>
+            <li><label for="tel">연락처</label>
+            <input type="text" id="tel" required placeholder="하이픈 없이">
+            </li>
+            <li>
+            <p><label for="etc">기타사항</label></p>
+            <textarea id="etc" cols="50" rows="5" placeholder="예약배송 문의 등 기타 요청사항을 적어주세요."></textarea>
+            </li>
+             </ul>
+      </fieldset>
+      <div>
+      <button type="submit">주문하기</button>
+      <button type="reset">취소</button>
+    </div>
+    </form>
+   </main>
+   <footer><p>문의사항 000-000-0000 / aboutrose@xxxxx.com</p></footer>
+</body>
+</html>

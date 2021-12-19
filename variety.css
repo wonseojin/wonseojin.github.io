@@ -1,0 +1,63 @@
+h2 {
+    padding: 30px 20px;
+}
+
+.varimg {
+    margin: 0 auto;
+}
+
+ul {
+    font-size: 0;
+}
+
+ul > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    margin: 10px;
+}
+
+ul > li > a {
+    display: block;
+    width: auto;
+    text-decoration: none;
+    margin: 5px;
+}
+
+ul > li > a > .screen {
+    position: relative;
+    overflow: hidden;
+}
+
+ul > li > a > .screen .top {
+    position:absolute;
+    bottom: 150%;
+    left: 30px;
+    z-index: 2;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 900;
+    transition: all .35s;
+}
+
+ul > li > a > .screen .bottom {
+    position:absolute;
+    bottom: 150%;
+    left: 30px;
+    z-index: 2;
+    color: #fff;
+    font-size: 15px;
+    transition: all .35s;
+}
+
+ul > li > a > .screen img {
+   width:100%;
+}
+
+ul > li > a:hover .top {
+    bottom: 52%;
+}
+
+ul > li > a:hover .bottom {
+    top: 52%;
+}
